@@ -1,0 +1,221 @@
+.counsellor-card-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counsellors-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+  border-style: groove;
+  border-width: 1px;
+  border-color: grey;
+  width: 100%;
+  max-width: 400px;
+  margin: 0px;
+}
+
+.counsellor-card img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 23px;
+}
+
+.counsellors-card-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.counsellors-title {
+  font-size: 10px;
+  color: white;
+}
+
+.counsellors-description {
+  font-size: 8px;
+  color: grey;
+}
+
+.counsellors-right-arrow {
+  width: 5px;
+  margin-top: 5px;
+}
+
+.card-items {
+  padding: 10px;
+  padding-top: 0;
+}
+
+.price-tags {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.price {
+  background-color: rgb(226, 222, 222);
+  color: #111;
+  border-radius: 10px;
+  font-size: 14px;
+  align-self: center;
+  padding: 5px;
+}
+
+.likes {
+  background-color: grey;
+  border-radius: 10px;
+  font-size: 14px;
+  align-self: center;
+  padding: 5px;
+  color: white;
+}
+
+.language {
+  padding: 5px;
+  font-size: 12px;
+  color: white;
+  align-self: center;
+}
+
+@media (max-width: 1024px) {
+  /* Tablet and smaller laptops */
+  .counsellors-card {
+    max-width: 90%;
+  }
+
+  .counsellors-title {
+    font-size: 12px;
+  }
+
+  .counsellors-description {
+    font-size: 10px;
+  }
+
+  .price-tags {
+    gap: 20px;
+  }
+
+  .price,
+  .likes {
+    font-size: 16px;
+  }
+
+  .language {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Media Queries for Mobile devices */
+  .counsellors-card {
+    width: 100px;
+  }
+
+  .counsellor-card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile-pic {
+    width: 25px;
+    height: 35px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .counsellors-title {
+    font-size: 14px;
+  }
+
+  .counsellors-description {
+    font-size: 12px;
+  }
+
+  .counsellors-right-arrow {
+    width: 30px;
+  }
+
+  .price-tags {
+    gap: 10px;
+  }
+
+  .price,
+  .likes {
+    font-size: 14px;
+  }
+
+  .language {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Media Queries for Mobile devices with small displays*/
+  .counsellors-card {
+    padding: 5px;
+  }
+
+  .counsellor-card img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .profile-pic {
+    width: 20px;
+    height: 30px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .counsellors-title {
+    font-size: 12px;
+  }
+
+  .counsellors-description {
+    font-size: 10px;
+  }
+
+  .counsellors-right-arrow {
+    width: 25px;
+  }
+
+  .price-tags {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .price,
+  .likes {
+    font-size: 12px;
+  }
+
+  .language {
+    font-size: 10px;
+  }
+}

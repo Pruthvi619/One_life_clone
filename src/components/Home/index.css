@@ -1,0 +1,405 @@
+@font-face {
+  font-family: "TAN MON CHERI";
+  src: url("../../fonts/tan-mon-cheri.woff2") format("woff2"),
+    url("../../fonts/tan-mon-cheri.woff") format("woff"),
+    url("../../fonts/tan-mon-cheri.ttf") format("truetype");
+}
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+.container {
+  padding: 20px;
+  background-image: linear-gradient(
+    to top,
+    #3f51b1 0%,
+    #5a55ae 13%,
+    #7b5fac 25%,
+    #8f6aae 38%,
+    #a86aa4 50%,
+    #cc6b8e 62%,
+    #f18271 75%,
+    #f3a469 87%,
+    #f7c978 100%
+  );
+}
+
+.image-text-container,
+.image-text-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-left: 50px;
+  align-items: center;
+}
+
+.image-text-container div,
+.image-text-container2 div {
+  flex: 1;
+}
+
+.title,
+.title2 {
+  font-size: 42px;
+  font-family: "TAN MON CHERI", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  line-height: 90px !important;
+  color: #000;
+}
+
+.description,
+.description2 {
+  font-family: "Josefin Sans", cursive;
+  font-size: 18px;
+  color: #000;
+}
+
+.main-image {
+  width: 90%;
+  height: auto;
+}
+
+.speak-button {
+  background-color: white;
+  border-radius: 20px;
+  border-style: none;
+  padding: 15px;
+  font-size: 20px;
+  font-family: "Josefin Sans", cursive;
+  cursor: pointer;
+  color: #000;
+}
+
+.icon-class {
+  padding-left: 5px;
+  font-size: medium;
+}
+
+.speak-button:hover {
+  transform: scale(1.1);
+}
+
+#text {
+  text-align: right;
+  font-family: "Josefin Sans", cursive;
+  font-size: 18px;
+  color: #000;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.section {
+  width: 80%;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.anonymity {
+  background-image: linear-gradient(
+    -225deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
+}
+.professionals {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.support {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+.express {
+  background-image: linear-gradient(
+    to top,
+    #fdcbf1 0%,
+    #fdcbf1 1%,
+    #e6dee9 100%
+  );
+}
+.empower {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #000;
+}
+.title3 {
+  font-size: x-large;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  text-align: center;
+  color: #000;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  gap: 20px;
+  align-items: center;
+  margin-left: 0;
+  background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+}
+
+.card {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  max-width: 600px;
+  margin: 10px;
+  text-align: center;
+}
+
+.quote-section {
+  padding: 40px 20px;
+  background-image: radial-gradient(
+    circle 248px at center,
+    #16d9e3 0%,
+    #30c7ec 47%,
+    #46aef7 100%
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 99%;
+  text-align: center;
+}
+
+.quote-title {
+  font-size: 32px;
+  text-align: left;
+  font-family: "TAN MON CHERI", sans-serif;
+  font-weight: 300;
+  color: #000;
+}
+
+.author {
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: right;
+  color: #000;
+}
+
+.mission-statement {
+  margin-top: 20px;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.footer {
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  );
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  width: auto;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-links a:hover {
+  color: grey;
+  transform: scale(1.1);
+}
+
+.footer-address p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #000;
+}
+
+.author-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  align-content: start;
+  justify-content: end;
+}
+
+.quote-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+.quote-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-bot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.chat-bot {
+  border-radius: 20px;
+  width: 60px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  /* Media Queries for Tablets devices*/
+  .image-text-container,
+  .image-text-container2 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .title,
+  .title2 {
+    font-size: 36px;
+    line-height: 60px !important;
+    text-align: center;
+  }
+
+  .description,
+  .description2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .main-content,
+  .quote-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .quote-section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Media Queries for Mobile devices*/
+  .image-text-container,
+  .image-text-container2 {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .title,
+  .title2 {
+    font-size: 28px;
+    line-height: 50px !important;
+  }
+
+  .description,
+  .description2 {
+    font-size: 14px;
+  }
+
+  .speak-button {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .quote-title {
+    font-size: 24px;
+  }
+
+  .quote-section {
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-links a,
+  .footer-address p {
+    font-size: 0.8em;
+  }
+
+  .chat-bot-container {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .chat-bot {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Media Queries for Mobile devices with small displays*/
+  .image-text-container,
+  .image-text-container2 {
+    padding: 10px;
+  }
+
+  .title,
+  .title2 {
+    font-size: 24px;
+    line-height: 40px !important;
+  }
+
+  .description,
+  .description2 {
+    font-size: 12px;
+  }
+
+  .speak-button {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .quote-title {
+    font-size: 20px;
+  }
+
+  .quote-section {
+    padding: 10px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-links a,
+  .footer-address p {
+    font-size: 0.7em;
+  }
+
+  .chat-bot {
+    width: 40px;
+  }
+}

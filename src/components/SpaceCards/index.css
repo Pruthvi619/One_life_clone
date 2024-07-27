@@ -1,0 +1,166 @@
+.post-card-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.post-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 8px;
+  color: #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 550px;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-color: grey;
+  border-radius: 15px;
+  border-width: 0.5px;
+  border-style: groove;
+}
+
+.post-card:hover {
+  transform: scale(1.02);
+}
+
+.post-header,
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-user {
+  display: flex;
+  align-items: center;
+}
+
+.post-user-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.post-username {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.post-timestamp {
+  font-size: 10px;
+  color: #888;
+  display: flex;
+  align-items: center;
+}
+
+.post-title {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.post-description {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.back-button {
+  background-color: #444;
+  color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.back-button:hover {
+  background-color: #333;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.post-meta,
+.post-views {
+  display: flex;
+  gap: 10px;
+  border-style: groove;
+  border-radius: 15px;
+  padding: 5px;
+  border-width: 0.5px;
+}
+
+.post-meta span,
+.post-views span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.post-meta span,
+.post-views span {
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  /* Media Queries for Mobile devices*/
+  .post-card-container {
+    width: 100%;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+  .post-card {
+    width: 400px;
+    margin-left: 0px;
+  }
+
+  .post-title {
+    font-size: 14px;
+  }
+
+  .post-description {
+    font-size: 12px;
+  }
+
+  .post-meta span,
+  .post-views span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Media Queries for Mobile devices with small displays*/
+  .post-card {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .post-title {
+    font-size: 14px;
+  }
+
+  .post-description {
+    font-size: 12px;
+  }
+
+  .post-meta,
+  .post-views {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-meta span,
+  .post-views span {
+    font-size: 12px;
+  }
+}
