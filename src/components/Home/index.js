@@ -25,10 +25,12 @@ const Home = () => {
             <br /> you can connect, share, and grow with
             <br /> others on their mental health journey.
           </p>
-          <button className="speak-button" onClick={handleBackClick}>
-            SPEAK IT OUT
-            <GoArrowRight className="icon-class" />
-          </button>
+          <div className="button-container">
+            <button className="speak-button" onClick={handleBackClick}>
+              SPEAK IT OUT
+              <GoArrowRight className="icon-class" />
+            </button>
+          </div>
         </div>
         <div>
           <img

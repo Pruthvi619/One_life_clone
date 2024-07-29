@@ -106,7 +106,7 @@ const posts = [
     username: "Anonymouswolf",
     title: "Conflicted Loyalty: A Friend’s Moral Dilemma",
     description:
-      "I'm a 32-year-old woman, I'm facing a profound moral dilemma. My best friend recently confided in me that she's involved in an affair with her married boss. She’s deeply torn between her strong feelings for him and the guilt of betraying his family. She’s pleaded with me to keep her secret, but the weight of this knowledge is overwhelming. I'm struggling to decide whether to confront her about the situation or remain silent. I'm afraid that no matter what I choose, it will strain or even damage our friendship.",
+      "I'm a 32-year-old woman, Im facing a profound moral dilemma. My best friend recently confided in me that she's involved in an affair with her married boss. She’s deeply torn between her strong feelings for him and the guilt of betraying his family. She’s pleaded with me to keep her secret, but the weight of this knowledge is overwhelming. I'm struggling to decide whether to confront her about the situation or remain silent. I'm afraid that no matter what I choose, it will strain or even damage our friendship.",
     daysAgo: 51,
     likes: 0,
     comments: 0,
@@ -128,11 +128,13 @@ const Space = () => {
     <div className="app-container">
       <aside className="sidebar">
         <div className="logo-container">
-          <img
-            src="https://cdn.onelifehealth.care/assets/one-life-logo-white.png"
-            alt="logo"
-            className="logo-image"
-          />
+          <Link to="/">
+            <img
+              src="https://cdn.onelifehealth.care/assets/one-life-logo-white.png"
+              alt="logo"
+              className="logo-image"
+            />
+          </Link>
         </div>
         <div className="footer-space">
           <nav className="footer-nav">
@@ -155,7 +157,15 @@ const Space = () => {
       </aside>
       <header className="header">
         <div className="header-content">
-          <h1>Speak It Out!</h1>
+          <Link to="/">
+            <img
+              src="https://cdn.onelifehealth.care/assets/one-life-logo-white.png"
+              alt="logo"
+              className="logo-image"
+              id="space-logo-image"
+            />
+          </Link>
+          <h1 className="speak-header-title">Speak It Out!</h1>
           <div className="header-actions">
             <input type="text" placeholder="Search..." className="search-bar" />
             <button className="post-button">
@@ -167,31 +177,29 @@ const Space = () => {
       </header>
       <div className="main-content-container">
         <main className="main-content-post">
-          <div className="horizontal-line-container">
-            <div className="sort-container">
-              <hr className="horizontal-line" />
-              <span className="label">
-                Sort by: Top
-                <FaSortDown />
-              </span>
-            </div>
-            {posts.map((post, index) =>
-              expandedPostIndex === null || expandedPostIndex === index ? (
-                <SpaceCards
-                  key={index}
-                  username={post.username}
-                  title={post.title}
-                  description={post.description}
-                  daysAgo={post.daysAgo}
-                  likes={post.likes}
-                  comments={post.comments}
-                  views={post.views}
-                  isExpanded={expandedPostIndex === index}
-                  onToggleExpand={() => handleToggleExpand(index)}
-                />
-              ) : null
-            )}
+          <div className="sort-container">
+            <hr className="horizontal-line" />
+            <span className="label">
+              Sort by: Top
+              <FaSortDown />
+            </span>
           </div>
+          {posts.map((post, index) =>
+            expandedPostIndex === null || expandedPostIndex === index ? (
+              <SpaceCards
+                key={index}
+                username={post.username}
+                title={post.title}
+                description={post.description}
+                daysAgo={post.daysAgo}
+                likes={post.likes}
+                comments={post.comments}
+                views={post.views}
+                isExpanded={expandedPostIndex === index}
+                onToggleExpand={() => handleToggleExpand(index)}
+              />
+            ) : null
+          )}
         </main>
       </div>
       <aside className="right-panel">

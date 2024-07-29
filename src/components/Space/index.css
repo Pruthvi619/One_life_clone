@@ -96,7 +96,9 @@ html {
   justify-content: space-between;
   width: 100%;
 }
-
+#space-logo-image {
+  display: none;
+}
 .header h1 {
   margin: 0;
   font-size: 24px;
@@ -145,7 +147,6 @@ html {
 
 .main-content-post {
   padding: 20px;
-
   min-height: 100vh;
 }
 
@@ -157,6 +158,7 @@ html {
   display: flex;
   flex-direction: row;
   padding-bottom: 5px;
+  margin-top: 10px;
 }
 
 .horizontal-line {
@@ -224,7 +226,9 @@ html {
   flex-direction: column;
   align-items: flex-end;
 }
-
+.footer {
+  display: none;
+}
 .chat-bot {
   border-radius: 20px;
   width: 60px;
@@ -233,50 +237,128 @@ html {
 
 @media (max-width: 1200px) {
   /* Large laptops */
+
   .header {
-    width: calc(100% - 200px);
+    margin: 0px;
+    padding: 0px;
+  }
+  #space-logo-image {
+    width: 220px;
+    height: 60px;
+  }
+  .header h1 {
+    font-size: 20px;
+    align-self: center;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: -300px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
   }
 
+  #space-logo-image {
+    display: block;
+  }
+
+  .header-actions {
+    display: none;
+  }
   .right-panel {
     display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .main-content-container {
+    padding: 15px;
+    width: calc(100% - 200px);
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .main-content-post {
+    padding: 20px;
+    min-height: 100vh;
+    margin-left: 0px;
+  }
+  .horizontal-line {
+    width: calc(100% - 650px);
+  }
+  .horizontal-line-container {
+    margin-left: 0px;
+  }
+  .footer {
+    display: block;
   }
 }
 
 @media (max-width: 1024px) {
   /* Tablets and smaller laptops */
   .header {
-    width: calc(100% - 200px);
+    margin: 0px;
+    padding: 0px;
   }
-
-  .sidebar {
-    width: 200px;
+  #space-logo-image {
+    width: 250px;
+    height: 70px;
   }
-
-  .logo-image {
-    width: 120px;
+  .header h1 {
+    font-size: 22px;
+    align-self: center;
   }
-
-  .main-content-container {
-    margin-left: 200px;
-  }
-
-  .footer-list li {
-    font-size: 12px;
+  .header-actions {
+    display: none;
   }
   .right-panel {
     display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .main-content-container {
+    padding: 15px;
+    width: calc(100% - 200px);
+    margin-left: 0px;
+  }
+  .main-content-post {
+    padding: 20px;
+    min-height: 100vh;
+    margin-left: 0px;
+  }
+  .horizontal-line {
+    width: calc(100% - 650px);
+  }
+  .horizontal-line-container {
+    margin-left: 0px;
+  }
+  .footer {
+    display: block;
   }
 }
 
 @media (max-width: 768px) {
   /* Media Queries for Mobile devices*/
   .header {
-    width: 90%;
+    margin: 0px;
+    padding: 0px;
   }
-  .logo-image {
-    width: 100px;
+  #space-logo-image {
+    width: 220px;
+    height: 60px;
   }
-
+  .header h1 {
+    font-size: 20px;
+    align-self: center;
+  }
+  .login-button {
+    display: none;
+  }
+  .header-actions {
+    display: none;
+  }
   .main-content-container {
     margin-left: 0px;
   }
@@ -308,21 +390,32 @@ html {
   .sidebar {
     display: none;
   }
+  .footer {
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
   /* Media Queries for Mobile devices with small displays*/
   .header {
-    width: calc(100% - 100px);
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
   }
-
+  #space-logo-image {
+    width: 200px;
+    height: 50px;
+  }
+  .header h1 {
+    font-size: 16px;
+    align-self: center;
+  }
+  .header-actions {
+    display: none;
+  }
   .sidebar {
     width: 100px;
     padding: 10px;
-  }
-
-  .logo-image {
-    width: 80px;
   }
 
   .main-content-container {
@@ -331,17 +424,17 @@ html {
   .main-content-post {
     margin-left: 0px;
   }
-  .horizontal-line-container {
-    margin-left: 0px;
+  .horizontal-line {
+    display: none;
   }
   .sort-container {
     margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
-
-  .footer-list li {
-    font-size: 16px;
-  }
-
   .post-button {
     width: 20px;
     height: 20px;
@@ -355,5 +448,8 @@ html {
   }
   .sidebar {
     display: none;
+  }
+  .footer {
+    display: block;
   }
 }

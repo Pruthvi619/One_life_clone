@@ -282,7 +282,18 @@ p {
     margin-left: 0;
     padding: 20px;
   }
-
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .speak-button {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .speak-button:hover {
+    transform: scale(1.1);
+  }
   .title,
   .title2 {
     font-size: 36px;
@@ -327,9 +338,17 @@ p {
     font-size: 14px;
   }
 
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .speak-button {
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .speak-button:hover {
+    transform: scale(1.1);
   }
 
   .quote-title {
@@ -377,11 +396,18 @@ p {
     font-size: 12px;
   }
 
-  .speak-button {
-    padding: 8px;
-    font-size: 16px;
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
-
+  .speak-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .card {
+    padding: 5px;
+  }
   .quote-title {
     font-size: 20px;
   }
